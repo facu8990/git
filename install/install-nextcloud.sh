@@ -20,5 +20,5 @@ echo "Copiando archivos base para Contenedor Nextcloud y OpenOffice"
 [[ ! -d /opt/nextcloud/onlyoffice/logs ]] && sudo mkdir -p /opt/nextcloud/onlyoffice/logs
 [[ -d /opt/nextcloud/onlyoffice/logs ]] && echo "Directorio /opt/nextcloud/onlyoffice/logs Creado"
 
-[[ ! -L /opt/nextcloud/docker-compose.yml ]] && sudo ln -s ../compose/nextcloud-compose.yml /opt/nextcloud/docker-compose.yml
+[[ ! -L /opt/nextcloud/docker-compose.yml ]] && sudo ln -s ~/git/compose/nextcloud-compose.yml /opt/nextcloud/docker-compose.yml
 [[ -L /opt/nextcloud/docker-compose.yml ]] && echo "Link a ~/git/compose/nextcloud-compose.yml establecido"
