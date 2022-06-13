@@ -7,7 +7,7 @@ services:
       - PUID=1000 #optional
       - PGID=1000 #optional
       - TZ=America/Argentina/Buenos_Aires
-      - SUBDOMAINS=cloud-sudeste,facundo-redon,minecraft-se,sudeste,terraria-se
+      - SUBDOMAINS=cloud-sudeste,office-sudeste,sudeste,view-sudeste
       - TOKEN=7a6d5d35-d0ca-40e3-b4cc-fe27059a323a
       - LOG_FILE=true #optional
     volumes:
