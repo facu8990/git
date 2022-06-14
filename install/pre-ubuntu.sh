@@ -7,7 +7,7 @@ echo "Actualizar paquetes post-instalación:"
 sudo apt -y upgrade
 
 echo "Instalar aplicaciones sudeste base:"
-sudo apt -y install tree docker cockpit nfs-common cockpit-machines cockpit-pcp
+sudo apt -y install tree docker cockpit nfs-common cockpit-machines cockpit-pcp xserver-xorg-video-qxl
 
 [[ ! -d ~/pre ]] && mkdir ~/pre
 [[ -d ~/pre ]] && echo "Directorio ~/pre Creado"

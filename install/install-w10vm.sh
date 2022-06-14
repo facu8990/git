@@ -9,7 +9,7 @@
 
 sudo qemu-img create /opt/win10vm/disk.hd.img.raw 40G
 
-qemu-system-x86_64 -bios /usr/share/ovmf/ovmf_x64.bin -enable-kvm -cpu host -smp 4 -m 4096 -net user  -net nic,model=virtio -vga qxl -cdrom ~/images/win10.iso -drive file=/opt/win10vm/disk.hd.img.raw,format=raw,if=virtio -drive file=~/images/win10.iso,index=1,media=cdrom
+sudo qemu-system-x86_64 -bios /usr/share/ovmf/OVMF.fd -enable-kvm -cpu host -smp 4 -m 4096 -net user  -net nic,model=virtio -vnc -vga qxl -cdrom ~/images/win10.iso -drive file=/opt/win10vm/disk.hd.img.raw,format=raw,if=virtio -drive file=~/images/win10.iso,index=1,media=cdrom
 
 qemu-system-x86_64
  -enable-kvm
