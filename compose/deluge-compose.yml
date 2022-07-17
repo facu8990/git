@@ -6,11 +6,14 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=sudoAmerica/Buenos_Aires
+      - TZ=America/Buenos_Aires
       - DELUGE_LOGLEVEL=error #optional
     volumes:
       - /opt/deluge/config:/config
-      - /storage/plex:/downloads
+      - /storage/multimedia/downloads:/downloads
+      - /storage/multimedia/tvseries:/tvseries
+      - /storage/multimedia/movies:/movies
+      - /storage/multimedia/music:/music
     ports:
       - 8112:8112
       - 6881:6881
